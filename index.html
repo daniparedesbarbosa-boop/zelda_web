@@ -1,100 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Códice de Hyrule — Tributo a The Legend of Zelda</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Códice de Hyrule — Tributo a The Legend of Zelda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-<!-- ===================== HERO ===================== -->
-<header class="hero" id="hero">
-  <svg class="hero-triforce" id="heroTriforce" viewBox="0 0 200 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Triforce dorado, símbolo de las tres virtudes">
-    <defs>
-      <linearGradient id="triforceGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#f6e08a"/>
-        <stop offset="100%" stop-color="#b4881f"/>
-      </linearGradient>
-    </defs>
-    <polygon points="100,0 50,86.6 150,86.6"></polygon>
-    <polygon points="0,173.2 50,86.6 100,173.2"></polygon>
-    <polygon points="200,173.2 150,86.6 100,173.2"></polygon>
-  </svg>
-  <h1 class="hero-title">El Códice de Hyrule</h1>
-  <p class="hero-tagline">Un tributo de fans para fans, escrito por quienes todavía se detienen a escuchar cuando alguien silba la melodía de una ocarina.</p>
-  <button class="scroll-cue" id="scrollCue" type="button">
-    Comenzar el viaje
-    <span class="cue-tri" aria-hidden="true"></span>
-  </button>
-</header>
-
-<main>
-
-  <!-- ===================== ABOUT ===================== -->
-  <section class="about" id="about">
-    <div class="about-text">
-      <h2>Una leyenda que nunca termina de contarse</h2>
-      <p>Desde 1986, Nintendo lleva reinventando la misma pregunta: ¿qué pasaría si una aventura pudiera caber en un mapa que el propio jugador va descubriendo? La saga nació de los recuerdos de infancia de Shigeru Miyamoto y Takashi Tezuka, de tardes explorando cuevas, bosques y pueblos cercanos a su ciudad natal sin mapa ni guía.</p>
-      <p>Cada entrega vuelve a Hyrule, un reino que cambia de forma según la época, pero conserva sus mismas piezas: un héroe silencioso llamado Link, una princesa que rara vez es solo una damisela, un antagonista que codicia el poder absoluto, y un objeto legendario, el Triforce, capaz de conceder cualquier deseo a quien lo toque con el corazón equilibrado.</p>
-      <p>Lo que mantiene viva la fórmula no es la repetición, sino la reinvención: la vista cenital original, el salto a los mundos tridimensionales de Ocarina of Time, el cel-shading de Wind Waker, y la libertad casi total de Breath of the Wild y Tears of the Kingdom, donde el propio jugador decide cómo llegar a cada rincón del mapa.</p>
-    </div>
-    <div class="about-art">
-      <svg viewBox="0 0 120 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración lineal de una espada">
-        <g fill="none" stroke="#c49a2c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M60 8 L60 150"/>
-          <path d="M46 8 L60 2 L74 8 L66 26 L54 26 Z"/>
-          <path d="M30 150 L90 150"/>
-          <path d="M40 150 L40 165 L60 175 L80 165 L80 150"/>
-          <path d="M60 175 L60 214"/>
-          <circle cx="60" cy="214" r="6"/>
-        </g>
+  <body>
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="hero">
+      <svg
+        class="hero-triforce"
+        id="heroTriforce"
+        viewBox="0 0 200 174"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Triforce dorado, símbolo de las tres virtudes"
+      >
+        <defs>
+          <linearGradient id="triforceGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f6e08a" />
+            <stop offset="100%" stop-color="#b4881f" />
+          </linearGradient>
+        </defs>
+        <polygon points="100,0 50,86.6 150,86.6"></polygon>
+        <polygon points="0,173.2 50,86.6 100,173.2"></polygon>
+        <polygon points="200,173.2 150,86.6 100,173.2"></polygon>
       </svg>
-    </div>
-  </section>
+      <h1 class="hero-title">El Códice de Hyrule</h1>
+      <p class="hero-tagline">
+        Un tributo de fans para fans, escrito por quienes todavía se detienen a
+        escuchar cuando alguien silba la melodía de una ocarina.
+      </p>
+      <button class="scroll-cue" id="scrollCue" type="button">
+        Comenzar el viaje
+        <span class="cue-tri" aria-hidden="true"></span>
+      </button>
+    </header>
 
-  <!-- ===================== TIMELINE ===================== -->
-  <section class="timeline" id="timeline">
-    <div class="wrap">
-      <h2>Las edades del reino</h2>
-      <ol class="timeline-rail" id="timelineRail"><!-- filled by JS --></ol>
-    </div>
-  </section>
+    <main>
+      <!-- ===================== ABOUT ===================== -->
+      <section class="about" id="about">
+        <div class="about-text">
+          <h2>Una leyenda que nunca termina de contarse</h2>
+          <p>
+            Desde 1986, Nintendo lleva reinventando la misma pregunta: ¿qué
+            pasaría si una aventura pudiera caber en un mapa que el propio
+            jugador va descubriendo? La saga nació de los recuerdos de infancia
+            de Shigeru Miyamoto y Takashi Tezuka, de tardes explorando cuevas,
+            bosques y pueblos cercanos a su ciudad natal sin mapa ni guía.
+          </p>
+          <p>
+            Cada entrega vuelve a Hyrule, un reino que cambia de forma según la
+            época, pero conserva sus mismas piezas: un héroe silencioso llamado
+            Link, una princesa que rara vez es solo una damisela, un antagonista
+            que codicia el poder absoluto, y un objeto legendario, el Triforce,
+            capaz de conceder cualquier deseo a quien lo toque con el corazón
+            equilibrado.
+          </p>
+          <p>
+            Lo que mantiene viva la fórmula no es la repetición, sino la
+            reinvención: la vista cenital original, el salto a los mundos
+            tridimensionales de Ocarina of Time, el cel-shading de Wind Waker, y
+            la libertad casi total de Breath of the Wild y Tears of the Kingdom,
+            donde el propio jugador decide cómo llegar a cada rincón del mapa.
+          </p>
+          <img
+            src="https://daniela-bucket-static-files.s3.us-east-1.amazonaws.com/emblema_hyrule.jpg"
+            alt="Workshop file from Amazon S3"
+            width="320"
+          />
+        </div>
+        <div class="about-art">
+          <svg
+            viewBox="0 0 120 220"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Ilustración lineal de una espada"
+          >
+            <g
+              fill="none"
+              stroke="#c49a2c"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M60 8 L60 150" />
+              <path d="M46 8 L60 2 L74 8 L66 26 L54 26 Z" />
+              <path d="M30 150 L90 150" />
+              <path d="M40 150 L40 165 L60 175 L80 165 L80 150" />
+              <path d="M60 175 L60 214" />
+              <circle cx="60" cy="214" r="6" />
+            </g>
+          </svg>
+        </div>
+      </section>
 
-  <!-- ===================== VIRTUES ===================== -->
-  <section class="virtues" id="virtues">
-    <div class="wrap">
-      <h2>Las tres virtudes doradas</h2>
-      <p class="virtues-intro">Tres diosas dieron forma al mundo y dejaron en él un fragmento de sí mismas. Elige una pieza del Triforce para leer qué representa.</p>
-      <div class="virtue-grid" id="virtueGrid" role="group" aria-label="Elegir virtud del Triforce"><!-- filled by JS --></div>
-      <div class="virtue-detail" id="virtueDetail">
-        <h3>Toca una pieza dorada</h3>
-        <p>Cada virtud guarda una historia distinta dentro de la leyenda. Elige Poder, Sabiduría o Coraje para descubrirla.</p>
-      </div>
-    </div>
-  </section>
+      <!-- ===================== TIMELINE ===================== -->
+      <section class="timeline" id="timeline">
+        <div class="wrap">
+          <h2>Las edades del reino</h2>
+          <ol class="timeline-rail" id="timelineRail">
+            <!-- filled by JS -->
+          </ol>
+        </div>
+      </section>
 
-  <!-- ===================== TRIVIA ===================== -->
-  <section class="trivia" id="trivia">
-    <div class="wrap">
-      <h2>La prueba de la ocarina</h2>
-      <p class="trivia-sub">Cinco preguntas para viajeros de Hyrule. Sin mapas, sin pistas.</p>
-      <div class="quiz-card" id="quizCard"><!-- filled by JS --></div>
-    </div>
-  </section>
+      <!-- ===================== VIRTUES ===================== -->
+      <section class="virtues" id="virtues">
+        <div class="wrap">
+          <h2>Las tres virtudes doradas</h2>
+          <p class="virtues-intro">
+            Tres diosas dieron forma al mundo y dejaron en él un fragmento de sí
+            mismas. Elige una pieza del Triforce para leer qué representa.
+          </p>
+          <div
+            class="virtue-grid"
+            id="virtueGrid"
+            role="group"
+            aria-label="Elegir virtud del Triforce"
+          >
+            <!-- filled by JS -->
+          </div>
+          <div class="virtue-detail" id="virtueDetail">
+            <h3>Toca una pieza dorada</h3>
+            <p>
+              Cada virtud guarda una historia distinta dentro de la leyenda.
+              Elige Poder, Sabiduría o Coraje para descubrirla.
+            </p>
+          </div>
+        </div>
+      </section>
 
-</main>
+      <!-- ===================== TRIVIA ===================== -->
+      <section class="trivia" id="trivia">
+        <div class="wrap">
+          <h2>La prueba de la ocarina</h2>
+          <p class="trivia-sub">
+            Cinco preguntas para viajeros de Hyrule. Sin mapas, sin pistas.
+          </p>
+          <div class="quiz-card" id="quizCard"><!-- filled by JS --></div>
+        </div>
+      </section>
+    </main>
 
-<!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
-  <p class="disclaimer">Esta es una página de fans, no oficial y sin fines comerciales, hecha por cariño a la saga. The Legend of Zelda, Hyrule, Link y todos los personajes, nombres e imágenes relacionados son marcas y propiedad de Nintendo Co., Ltd. Este sitio no está afiliado, respaldado ni patrocinado por Nintendo.</p>
-  <p class="credit">Hecho con un mando en la mano · <span id="year"></span></p>
-</footer>
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <p class="disclaimer">
+        Esta es una página de fans, no oficial y sin fines comerciales, hecha
+        por cariño a la saga. The Legend of Zelda, Hyrule, Link y todos los
+        personajes, nombres e imágenes relacionados son marcas y propiedad de
+        Nintendo Co., Ltd. Este sitio no está afiliado, respaldado ni
+        patrocinado por Nintendo.
+      </p>
+      <p class="credit">
+        Hecho con un mando en la mano · <span id="year"></span>
+      </p>
+    </footer>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
